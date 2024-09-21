@@ -1,0 +1,84 @@
+/* Esempio di regole di stile di base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+section p {
+    text-align: center;
+}
+
+#cursor {
+    font-weight: bold;
+    color: black; /* Colore del cursore */
+    animation: blink 0.7s step-end infinite; /* Animazione di lampeggio */
+    vertical-align: bottom; /* Allineamento alla linea di base del testo */
+    display: inline; /* Assicurarsi che sia in linea con il testo */
+}
+
+
+/* Effetto di lampeggio */
+@keyframes blink {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px; /* Riduci il margine superiore */
+    margin-bottom: 20px; /* Riduci il margine inferiore */
+    padding: 10px; /* Aggiungi un po' di padding per separare gli elementi */
+}
